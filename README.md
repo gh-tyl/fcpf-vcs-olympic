@@ -1,7 +1,10 @@
 # fcpf-olympic
 
-## First Step
+
+## For developer
+### Change branch
 - Change branch
     ```
     git checkout develop
     ```
+- 
