@@ -12,9 +12,25 @@ body {
     @include flexBox(column);
 }
 
-h1 {
-    color: $defaultWhite;
-    text-transform: capitalize;
+header {
+    img {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    figure:nth-child(2) {
+        img {
+            object-position: top;
+        }
+    }
+
+    figure:last-child {
+        img {
+            object-position: 50% 30%;
+        }
+    }
 }
 
 nav {
@@ -22,6 +38,12 @@ nav {
         text-transform: uppercase;
     }
 }
+
+h1 {
+    color: $defaultWhite;
+    text-transform: capitalize;
+}
+
 
 footer {
     width: 100%;
