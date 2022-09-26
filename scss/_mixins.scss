@@ -1,0 +1,30 @@
+@mixin flexBox($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin flexBoxDefault($direction,
+    $justifyContent: center,
+    $alignItems: center,
+    $rowGap: 0vh,
+    $columnGap: 0vh) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    row-gap: $rowGap;
+    column-gap: $columnGap;
+}
+
+@mixin bgImg($url,
+    $width: 20vh,
+    $height: 20vh,
+    $size: cover,
+) {
+    background-image: url($url);
+    background-position: center;
+    background-size: $size;
+    background-repeat: no-repeat;
+    width: $width;
+    height: $height;
+}

@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $fontFamily;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @include flexBox(column);
+}
+
+header {
+    img {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    figure:nth-child(2) {
+        img {
+            object-position: top;
+        }
+    }
+
+    figure:last-child {
+        img {
+            object-position: 50% 30%;
+        }
+    }
+}
+
+nav {
+    a {
+        text-transform: uppercase;
+    }
+}
+
+nav {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+h1 {
+    color: $defaultWhite;
+    text-transform: capitalize;
+}
+
+
+footer {
+    width: 100%;
+    padding: 5%;
+    background-color: $defaultDarkBlue;
+    text-align: center;
+}
+
+::placeholder {
+    color: $defaultBlack;
+}
