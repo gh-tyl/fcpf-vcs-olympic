@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olympic</title>
+    <title>History</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/home/title-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -23,10 +24,21 @@
                 <aside class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="history.html">history</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                history
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <!-- Change here for your own section -->
+                                <li><a class="dropdown-item" href="#history">history</a></li>
+                                <li><a class="dropdown-item" href="#summer-olympic">Summer Olympic</a></li>
+                                <li><a class="dropdown-item" href="#winter-olympic">Winter Olympic</a></li>
+                                <li><a class="dropdown-item" href="#paralympics">Paralympics</a></li>
+                                <li><a class="dropdown-item" href="#athletes">athletes</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="sports.html">sports</a>
@@ -89,6 +101,9 @@
     <footer>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
