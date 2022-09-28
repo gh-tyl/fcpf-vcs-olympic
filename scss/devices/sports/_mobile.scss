@@ -1,0 +1,160 @@
+@media (min-width: 200px) {
+    .sports-main {
+        @include flexBox(Column);
+        row-gap: 10vh;
+        padding: 10% 5%;
+
+        img {
+            width: 45vh;
+            height: 35vh;
+        }
+
+        h2, h3, h4 {
+            text-transform: capitalize;
+            text-align: center;
+            color: $defaultDarkBlue;
+        }
+    }
+
+    // SUMMER SPORTS SECTION
+    .sports-summer {
+        @include flexBox(Column);
+        row-gap: 3vh;
+
+
+        > article {
+            @include flexBox(Column);
+            row-gap: 2vh;
+        }
+        
+        figure, figcaption {
+            @include flexBox(Column);
+            align-items: center;
+            row-gap: 2vh;
+        }
+        > section {
+            @include flexBox(Column);
+            align-items: center;
+            row-gap: 5vh;
+
+            > article {
+                @include flexBox(Column);
+                align-items: center;
+                row-gap: 7vh;
+            }
+        }
+
+        figcaption {
+            h5 {
+                text-transform: uppercase;
+                color: $defaultDarkBlue;
+            }
+
+            p {
+                width: 90%;
+                // font-size: 16px;
+                text-align: center;
+            }
+
+            a {
+                border: 1px solid $defaultDarkBlue;
+                background-color: $defaultDarkBlue;
+                padding: 2% 5%;
+                text-decoration: none;
+                color: whitesmoke;
+                text-transform: capitalize;
+
+                &:hover {
+                    text-decoration: underline;
+                    background-color: $defaultYellowGold;
+                    color: $defaultDarkBlue;
+                    border: 1px solid $defaultDarkBlue;
+                }
+            }
+        }
+    }
+    // END SUMMER SPORTS
+    
+    // WINTER SPORTS SECTION
+    .sports-winter {
+        @include flexBox(Column);
+        row-gap: 3vh;
+
+        > article {
+            @include flexBox(Column);
+            row-gap: 2vh;
+            // border: 1px solid red;
+        }
+
+        ul {
+            @include flexBox(Column);
+            row-gap: 1vh;
+            list-style-type: square;
+
+            a {
+                text-decoration: none;
+                text-transform: capitalize;
+                color: $defaultDarkBlue;
+
+                &:hover {
+                    color: $defaultYellowGold;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        > section {
+            @include flexBox(Column);
+            row-gap: 5vh;
+        }
+        figure {
+            @include flexBox(Column);
+            row-gap: 1vh;
+            align-items: center;
+
+            img {
+                width: 30vh;
+                height: 40vh;
+            }
+        }
+
+    }
+    // END WINTER SPORTS
+
+
+    // PARALYIMPIC SPORTS
+    .sports-paralympics {
+        @include flexBox(Column);
+        row-gap: 3vh;
+
+        > article, > section {
+            @include flexBox(Column);
+            row-gap: 2vh;
+        }
+
+        > section {
+            // align-items: center;
+
+            a {
+                @include flexBox(Column);
+                align-items: center;
+                padding: 5%;
+                row-gap: 1vh;
+                text-decoration: none;
+                border: 1px solid transparent;
+            }
+
+            
+            a:hover {
+                border: 1px solid $defaultYellowGold;
+                background-color: $defaultYellowGold;
+
+                h4 {
+                    color: whitesmoke;
+                }
+             }
+        }
+    }
+
+    // END PARALIMPIC SPORTS
+}
