@@ -2,7 +2,10 @@
     .sports-main {
         @include flexBox(Column);
         row-gap: 10vh;
-        padding: 10% 5%;
+        background-color: whitesmoke;
+        > section {
+            padding: 10% 5%;
+        }
 
         img {
             width: 45vh;
@@ -77,8 +80,15 @@
     
     // WINTER SPORTS SECTION
     .sports-winter {
+        color: $defaultGray;
+        background-color: $defaultDarkBlue;
         @include flexBox(Column);
         row-gap: 3vh;
+
+        h2, h3, h4 {
+        color: $defaultGray;
+
+        }
 
         > article {
             @include flexBox(Column);
@@ -94,7 +104,7 @@
             a {
                 text-decoration: none;
                 text-transform: capitalize;
-                color: $defaultDarkBlue;
+                color: $defaultGray;
 
                 &:hover {
                     color: $defaultYellowGold;
