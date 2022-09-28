@@ -1,0 +1,86 @@
+@media (min-width: 200px) {
+    .history {
+        h2 {
+            color: $defaultYellowGold;
+            text-transform: capitalize;
+            font-size: 36px;
+            // width: fit-content;
+            padding: 1%;
+            border-bottom: 3px solid $defaultYellowGold;
+        }
+
+        h4 {
+            color: $defaultDarkBlue;
+            text-transform: capitalize;
+        }
+
+        p {
+            padding: 1%;
+        }
+
+        a {
+            color: $defaultBlack;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: $defaultRed;
+            text-decoration: underline;
+        }
+
+        figure {
+            width: 100%;
+
+            >img {
+                width: 100%;
+            }
+        }
+
+        main {
+            @include flexBox(column);
+            row-gap: 3vh;
+
+            >section {
+                @include flexBox(column);
+                row-gap: 3vh;
+                padding: 5%;
+            }
+
+            >section:nth-child(even) {
+                background-color: $defaultGray;
+
+                h2 {
+                    color: $defaultRed;
+                    border-bottom: 3px solid $defaultRed;
+                }
+            }
+        }
+
+        .ancient {
+            aside {
+                @include flexBox(column);
+                row-gap: 1vh;
+            }
+
+            figure {
+                @include flexBox(column);
+                row-gap: 1vh;
+            }
+
+            img {
+                width: 100%;
+                height: 40vh;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+
+        .ref {
+            i {
+                padding-left: 1%;
+            }
+        }
+
+        .controversies {}
+    }
+}
