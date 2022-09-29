@@ -7,16 +7,6 @@
             border-bottom: 3px solid $defaultYellowGold;
         }
 
-        p {
-            clear: both;
-        }
-
-        p:first-letter {
-            font-size: 36px;
-            float: left;
-            padding-right: 1vh;
-        }
-
         .ancient {
             aside {
                 @include flexBox(row);
