@@ -37,6 +37,8 @@ header {
 }
 
 nav {
+    background-color: $defaultBlueSapphire;
+
     a {
         text-transform: uppercase;
     }
@@ -57,10 +59,10 @@ h1 {
 footer {
     width: 100%;
     padding: 5%;
-    background-color: $defaultDarkBlue;
+    background-color: $defaultBlueSapphire;
     text-align: center;
 }
 
 ::placeholder {
-    color: $defaultBlack;
+    color: $defaultRichBlack;
 }
