@@ -1,0 +1,111 @@
+@media (min-width: 200px) {
+
+    .welcom{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/img/artists/img/01.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+
+        article{
+            background-color: rgb(142, 230, 230,0.5);
+            height: 50vh;
+        }
+
+
+       aside{
+            @include flexBox(column);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            row-gap: 5vh;
+            height: 100%;
+        }
+
+        aside > h1,p{
+            color: rgb(255, 254, 254);
+        }
+    }
+
+    .about{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/img/artists/img/01.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+
+
+       aside{
+            @include flexBox(column);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            row-gap: 5vh;
+            height: 100%;
+        }
+
+        h2,h3,p{
+            color: rgb(255, 254, 254);
+        }
+    }
+
+    .event{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/img/artists/img/01.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+
+
+       aside{
+            @include flexBox(column);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            row-gap: 5vh;
+            height: 100%;
+        }
+
+        h2,h3,p{
+            color: rgb(255, 254, 254);
+        }
+    }
+
+    .instructors{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/img/artists/img/01.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+
+
+       aside{
+            @include flexBox(column);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            row-gap: 5vh;
+            height: 100%;
+        }
+
+        h2,h3,p{
+            color: rgb(255, 254, 254);
+        }
+    }
+}
