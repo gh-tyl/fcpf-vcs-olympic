@@ -12,7 +12,7 @@
         background-position: top;
 
         article{
-            background-color: rgb(142, 230, 230,0.5);
+            background-color: rgba(22, 30, 30, 0.5);
             height: 50vh;
         }
 
@@ -37,7 +37,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url("/img/artists/img/01.jpeg");
+        background-image: url("/img/artists/img/02.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
@@ -63,7 +63,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-image: url("/img/artists/img/01.jpeg");
+        background-image: url("/img/artists/img/03.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
@@ -106,6 +106,13 @@
 
         h2,h3,p{
             color: rgb(255, 254, 254);
+        }
+    }
+
+    .photo{
+        figure{
+            width: 30vh;
+            height: 40vh;
         }
     }
 }
