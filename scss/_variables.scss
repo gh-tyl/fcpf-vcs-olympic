@@ -1,10 +1,24 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
+// New palette
 $defaultBlack : #0c0c0c;
+$defaultWhite : #F0F0F0;
+$defaultRichBlack : #001219;
+$defaultBlueSapphire : #005F73;
+$defaultViridianGreen : #0A9396;
+$defaultMiddleBlueGreen : #94D2BD;
+$defaultMediumChampagne : #E9D8A6;
+$defaultGamboge : #EE9B00;
+$defaultAlloyOrange : #CA6702;
+$defaultRust : #BB3E03;
+$defaultRufous : #AE2012;
+$defaultRubyRed : #9B2226;
+$fontFamily :'Gothic A1',
+sans-serif;
+
+// Don't use anymore
 $defaultDarkBlue : #19204E;
-$defaultWhite : #f0f0f0;
 $defaultRed : #DF1B3F;
 $defaultGray : #D6D6D6;
 $defaultYellowGold : #FCB300;
-$fontFamily :'Gothic A1',
-sans-serif;
