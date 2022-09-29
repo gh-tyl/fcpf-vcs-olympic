@@ -4,7 +4,6 @@
             color: $defaultYellowGold;
             text-transform: capitalize;
             font-size: 36px;
-            // width: fit-content;
             padding: 1%;
             border-bottom: 3px solid $defaultYellowGold;
         }
@@ -18,14 +17,14 @@
             padding: 1%;
         }
 
-        a {
-            color: $defaultBlack;
-            text-decoration: none;
+        p {
+            clear: both;
         }
 
-        a:hover {
-            color: $defaultRed;
-            text-decoration: underline;
+        p:first-letter {
+            font-size: 36px;
+            float: left;
+            padding-right: 1vh;
         }
 
         figure {
@@ -76,6 +75,16 @@
         }
 
         .ref {
+            a {
+                color: $defaultBlack;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $defaultRed;
+                text-decoration: underline;
+            }
+
             i {
                 padding-left: 1%;
             }
