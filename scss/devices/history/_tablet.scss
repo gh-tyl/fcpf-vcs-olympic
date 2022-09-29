@@ -5,6 +5,26 @@
             padding: 1%;
         }
 
+        .symbol {
+            h2 {
+                font-size: 24px;
+                width: fit-content;
+            }
+
+            figure {
+                width: 20%;
+            }
+
+            p,
+            p:first-letter {
+                font-size: 20px;
+                float: none;
+                padding: 0;
+                text-align: center;
+                color: $defaultWhite;
+            }
+        }
+
         .ancient {
             aside {
                 @include flexBox(row);
