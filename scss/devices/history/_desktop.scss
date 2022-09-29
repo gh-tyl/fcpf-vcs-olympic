@@ -1,0 +1,40 @@
+@media (min-width: 1000px) {
+    .history {
+        .origin {
+            >aside {
+                width: 100%;
+                display: block;
+            }
+
+            figure {
+                width: 46%;
+                padding: 2%;
+                height: fit-content;
+                float: right;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+
+        .symbol {
+            >aside {
+                width: 100%;
+                @include flexBox(row);
+                flex-direction: row-reverse;
+            }
+
+            figure {
+                width: 46%;
+                padding: 2%;
+                height: fit-content;
+            }
+
+            p {
+                width: 100%;
+                float: left;
+            }
+        }
+    }
+}
