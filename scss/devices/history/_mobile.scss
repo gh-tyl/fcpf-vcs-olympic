@@ -8,6 +8,16 @@
             border-bottom: 3px solid $defaultYellowGold;
         }
 
+        h3 {
+            button {
+                color: $defaultBlack;
+            }
+
+            span:first-letter {
+                text-transform: capitalize;
+            }
+        }
+
         h4 {
             color: $defaultDarkBlue;
             text-transform: capitalize;
@@ -15,16 +25,6 @@
 
         p {
             padding: 1%;
-        }
-
-        p {
-            clear: both;
-        }
-
-        p:first-letter {
-            font-size: 36px;
-            float: left;
-            padding-right: 1vh;
         }
 
         figure {
@@ -52,6 +52,16 @@
                     color: $defaultRed;
                     border-bottom: 3px solid $defaultRed;
                 }
+            }
+
+            // p {
+            //     clear: both;
+            // }
+
+            p:first-letter {
+                font-size: 36px;
+                float: left;
+                padding-right: 1vh;
             }
         }
 
@@ -90,6 +100,14 @@
             }
         }
 
-        .controversies {}
+        .accordion-button,
+        .accordion-item {
+            background-color: $defaultGray;
+            border-bottom: 0;
+        }
+
+        .accordion-button {
+            border-bottom: 1px solid $defaultYellowGold;
+        }
     }
 }
