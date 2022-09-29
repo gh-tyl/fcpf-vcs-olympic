@@ -11,6 +11,7 @@ html {
 
 body {
     @include flexBox(column);
+    background-color: whitesmoke;
 }
 
 header {
@@ -23,7 +24,8 @@ header {
 
     figure:nth-child(2) {
         img {
-            object-position: top;
+            object-position: 50% 15%;
+            // object-position: top;
         }
     }
 
