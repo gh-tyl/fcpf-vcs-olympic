@@ -1,118 +1,212 @@
 @media (min-width: 200px) {
 
-    .welcom{
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url("/img/artists/img/01.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
+	main{
+		background-color: $defaultMediumChampagne  ;
+	}
 
-        article{
-            background-color: rgba(22, 30, 30, 0.5);
-            height: 50vh;
-        }
+	.hover{
+
+		aside{
+			@include flexBox(row);
+			justify-content: center;
+			font-size: 100px;
+
+			h2{
+				font-size: 35px;
+				padding-top: 5%;
+				color: $defaultRust;
+				text-transform: uppercase
+			}
+		}
+
+		article{
+		@include flexBox(row);
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-top: 5%;
+		padding-bottom: 10%;
+		gap: 2vh;
+		
+			
+		:hover {
+			transform: scale(1.1, 1.1);
+			transition: 0.2s;
+		}
+		}
+		
+
+		img{
+			width: 10vh;
+			height: 10vh;
+			border-radius: 40px;
+			border: 2px solid rgb(188, 173, 36);
+		}
+	}
+
+	.welcom {
+		height: 50vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-image: url("/img/artists/img/01.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+		article {
+			background-color: rgba(23, 29, 29, 0.5);
+			height: 50vh;
+		}
+		aside {
+			@include flexBox(column);
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			row-gap: 2vh;
+			height: 100%;
+		}
+		aside>h1, p {
+			color: $defaultWhite;
+		}
+
+		p{
+			padding: 5%;
+		}
+	}
+
+	.second{
+		@include flexBox(row);
+	}
+
+	.about {
+		height: 60vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-image: url("/img/artists/img/11.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+
+		article {
+			@include flexBox(column);
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			row-gap: 2vh;
+		}
+		h2, p {
+			color: $defaultWhite;
+		}
+	}
+	.event {
+		height: 60vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-image: url("/img/artists/img/12.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+		article {
+			@include flexBox(column);
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			row-gap: 2vh;
+			height: 100%;
+			width: 100%;
+		}
+		h2, p {
+			color: $defaultWhite;
+		}
+	}
+	.instructors {
+		@include flexBox(column);
+		height: 50vh;
+		background-image: url("/img/artists/img/13.jpeg");
+		background-size: cover;
+		
+
+		article{
+			@include flexBox(column);
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			height: 100%;
+		}
+
+		h2, h3, p {
+			color: rgb(255, 254, 254);
+		}
+	}
+
+	.photos {
+		height: 100%;
+		background-color: $defaultMediumChampagne ;
+
+		h2{
+			display: flex;
+			justify-content: center;
+			color: $defaultRust;
+			font-size: 32px;
+			padding: 5%;
+		}
+		
+		figure{
+			@include flexBox(column);
+			row-gap: 2vh;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			margin: 0%;
+		}
+
+		figcaption{
+			padding: 5%;
+		}
+
+		img {
+			width: 30vh;
+			height: 30vh;
+		}
+	}
+
+	.news{
+		background-color: $defaultViridianGreen;
+		padding: 5%;
+
+		aside{
+			@include flexBox(column);
+			justify-content: center;
+			align-items: center;
+			row-gap: 2vh;
+			text-align: center;
+			height: 100%;
+		}
+
+		a{
+			background-color: $defaultBlueSapphire;
+			padding: 2%;
+			text-decoration: none;
+			color: $defaultWhite;
+		}
+
+	}
 
 
-       aside{
-            @include flexBox(column);
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            row-gap: 5vh;
-            height: 100%;
-        }
-
-        aside > h1,p{
-            color: rgb(255, 254, 254);
-        }
-    }
-
-    .about{
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url("/img/artists/img/02.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-
-
-       aside{
-            @include flexBox(column);
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            row-gap: 5vh;
-            height: 100%;
-        }
-
-        h2,h3,p{
-            color: rgb(255, 254, 254);
-        }
-    }
-
-    .event{
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url("/img/artists/img/03.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-
-
-       aside{
-            @include flexBox(column);
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            row-gap: 5vh;
-            height: 100%;
-        }
-
-        h2,h3,p{
-            color: rgb(255, 254, 254);
-        }
-    }
-
-    .instructors{
-        height: 50vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url("/img/artists/img/01.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-
-
-       aside{
-            @include flexBox(column);
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            row-gap: 5vh;
-            height: 100%;
-        }
-
-        h2,h3,p{
-            color: rgb(255, 254, 254);
-        }
-    }
-
-    .photo{
-        figure{
-            width: 30vh;
-            height: 40vh;
-        }
-    }
+	footer {
+		color: whitesmoke;
+		font-size: 20px;
+		@include flexBox(column);
+		justify-content: center;
+		row-gap: 2vh;
+		article {
+			display: flex;
+			justify-content: center;
+			column-gap: 3vh;
+		}
+	}
 }
