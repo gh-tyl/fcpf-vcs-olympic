@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body id="home">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <aside class=" container-fluid">
@@ -35,8 +35,8 @@
                                 <li><a class="dropdown-item" href="#history">history</a></li>
                                 <li><a class="dropdown-item" href="#summer-olympic">Summer Olympic</a></li>
                                 <li><a class="dropdown-item" href="#winter-olympic">Winter Olympic</a></li>
-                                <li><a class="dropdown-item" href="#paralympics">Paralympics</a></li>
                                 <li><a class="dropdown-item" href="#athletes">athletes</a></li>
+                                <li><a class="dropdown-item" href="#paralympics">contacts</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -53,38 +53,38 @@
             </aside>
         </nav>
         <!-- carousel -->
-        <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-            <aside class="carousel-indicators">
+        <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <article class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
-            </aside>
-            <aside class="carousel-inner">
-                <figure class="carousel-item active">
+            </article>
+            <article class="carousel-inner">
+                <aside class="carousel-item active">
                     <img src="./img/home/olympic-rings-landscape.jpg" class="d-block" alt="olympic-rings-landscape">
-                    <figcaption class="carousel-caption d-none d-md-block">
+                    <article class="carousel-caption d-none d-md-block">
                         <h5>history</h5>
                         <p>Some representative placeholder content for the first slide.</p>
-                    </figcaption>
-                </figure>
-                <figure class="carousel-item">
+                    </article>
+                </aside>
+                <aside class="carousel-item">
                     <img src="./img/home/swimming-butterfly.jpg" class="d-block" alt="swimming-butterfly">
-                    <figcaption class="carousel-caption d-none d-md-block">
+                    <article class="carousel-caption d-none d-md-block">
                         <h5>sports</h5>
                         <p>Some representative placeholder content for the second slide.</p>
-                    </figcaption>
-                </figure>
-                <figure class="carousel-item">
+                    </article>
+                </aside>
+                <aside class="carousel-item">
                     <img src="./img/home/bobsled.jpg" class="d-block" alt="bobsled">
-                    <figcaption class="carousel-caption d-none d-md-block">
+                    <article class="carousel-caption d-none d-md-block">
                         <h5>athletes</h5>
                         <p>Some representative placeholder content for the third slide.</p>
-                    </figcaption>
-                </figure>
-            </aside>
+                    </article>
+                </aside>
+            </article>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -98,32 +98,41 @@
         </section>
     </header>
     <main>
-        <h2>Summary for this website</h2>
         <section class="history" id="history">
-            <h3>history</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi animi suscipit expedita est error
-                aliquid repudiandae. Doloribus, et amet?
-            </p>
+            <article>
+                <h3>history</h3>
+                <i class="fa-solid fa-landmark"></i>
+                <p>
+                    Although the ancient Games were staged in Olympia, Greece, from 776 BC through 393 AD, it took 1503
+                    years for the Olympics to return. The first modern Olympics were held in Athens, Greece, in 1896.
+                    The
+                    man responsible for its rebirth was a Frenchman named Baron Pierre de Coubertin, who presented the
+                    idea
+                    in 1894.
+                </p>
+            </article>
         </section>
         <section class="summer-olympic" id="summer-olympic">
-            <article>                
+            <article>
                 <h3>Summer Olympic games</h3>
                 <p>
-                    The summer olympic games is a global event that happens every four years. The first event happened in Athens, Greece in 1896. Since that, every four years we have this amazing competition.  
+                    The summer olympic games is a global event that happens every four years. The first event happened
+                    in Athens, Greece in 1896. Since that, every four years we have this amazing competition.
                 </p>
             </article>
             <section>
                 <h4>Few examples of sports in the summer games</h4>
 
-                <blockquote>
+                <aside>
                     <figure>
                         <img src="/img/sports/swimming-back.jpg" alt="swimming-back">
                         <figcaption>
                             <h5>swimming</h5>
                             <p>
-                                At the olympic games the swimming events takes place in a 50-meter swimming pool divided in eight lanes.
-                                We have different swimming styles competitions such as: freestyle, backstroke, breaststroke and butterfly.
+                                At the olympic games the swimming events takes place in a 50-meter swimming pool divided
+                                in eight lanes.
+                                We have different swimming styles competitions such as: freestyle, backstroke,
+                                breaststroke and butterfly.
                             </p>
                             <a href="#">Read more</a>
                             <!-- https://www.nbcolympics.com/news/swimming-101-rules -->
@@ -135,26 +144,38 @@
                         <figcaption>
                             <h5>soccer</h5>
                             <p>
-                                The men's and women's soccer competitions at the Olympics consist of two stages, a group stage and a knockout stage. The men’s group stage, with 16 total teams, features four groups of four teams each. The women’s group stage, with 12 teams, includes three groups of four. 
+                                The men's and women's soccer competitions at the Olympics consist of two stages, a group
+                                stage and a knockout stage. The men’s group stage, with 16 total teams, features four
+                                groups of four teams each. The women’s group stage, with 12 teams, includes three groups
+                                of four.
                             </p>
                             <p>
-                                For the men, the top two teams in each group advance to the knockout stage. For the women, the top two teams in each group and the two best third-place teams advance. In both tournaments, the knockout stage begins with the quarterfinal round. All knockout stage matchups are contested over one 90-minute game. In the event of a tie after the 90 minutes, a 30-minute extra time period is played, followed by a penalty shootout if necessary. 
+                                For the men, the top two teams in each group advance to the knockout stage. For the
+                                women, the top two teams in each group and the two best third-place teams advance. In
+                                both tournaments, the knockout stage begins with the quarterfinal round. All knockout
+                                stage matchups are contested over one 90-minute game. In the event of a tie after the 90
+                                minutes, a 30-minute extra time period is played, followed by a penalty shootout if
+                                necessary.
                             </p>
                             <p>
-                                The winners of the quarterfinal matches face off in the semifinals. The semifinal winners advance to the Gold Medal Match, the semifinal losers play in the Bronze Medal Match.
+                                The winners of the quarterfinal matches face off in the semifinals. The semifinal
+                                winners advance to the Gold Medal Match, the semifinal losers play in the Bronze Medal
+                                Match.
                             </p>
                             <a href="#">Read more</a>
                             <!-- https://www.nbcolympics.com/news/soccer-101-competition-format -->
                         </figcaption>
                     </figure>
-                </blockquote>
+                </aside>
             </section>
         </section>
         <section class="winter-olympic" id="winter-olympic">
             <article>
                 <h3>Winter Olympic</h3>
                 <p>
-                    The winter olympic games is a global event that happens every four years for sports practiced on snow and ice. The first event happened in Chamonix, France in 1924. Since that, every four years we have this amazing competition.  
+                    The winter olympic games is a global event that happens every four years for sports practiced on
+                    snow and ice. The first event happened in Chamonix, France in 1924. Since that, every four years we
+                    have this amazing competition.
                 </p>
             </article>
 
@@ -164,9 +185,9 @@
 
                     <blockquote>
                         <h3>hockey</h3>
-
                         <p>
-                            Popularized in Canada in the early 19th century. Two teams with six players (five players and the goaltender) face each other in a iced surface to see witch team score more goals.
+                            Popularized in Canada in the early 19th century. Two teams with six players (five players
+                            and the goaltender) face each other in a iced surface to see witch team score more goals.
                         </p>
 
                         <a href="#">Read more</a>
@@ -179,7 +200,8 @@
                         <h3>bobsled</h3>
 
                         <p>
-                            The sport of sliding down an ice-covered natural or artificial incline on a four-runner sled, called a bobsled, bobsleigh, or bob, that carries either two or four persons.
+                            The sport of sliding down an ice-covered natural or artificial incline on a four-runner
+                            sled, called a bobsled, bobsleigh, or bob, that carries either two or four persons.
                         </p>
 
                         <a href="#">Read more</a>
@@ -188,22 +210,34 @@
                 </article>
             </section>
         </section>
-        <section class="paralympics" id="paralympics">
-            <h3>Paralympics</h3>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, quos. Quae impedit aliquam itaque
-                exercitationem beatae ducimus! Incidunt, nulla iusto?
-            </p>
-        </section>
         <section class="athletes" id="athletes">
             <h3>athletes</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consectetur repudiandae quaerat nulla
-                nisi accusamus quam beatae quas! Sint, dolore.
-            </p>
+            <article>
+                <aside>
+                    <i class="fa-solid fa-shirt-running"></i>
+                    <i class="fa-solid fa-medal"></i>
+                </aside>
+                <p>
+                    Olympians are athletes who compete at Olympic games, regardless if they win a medal or don't. Being
+                    eligible to participate in that renowned event means that they have displayed outstanding athletic
+                    abilities and achieved excellent results in their respective sports.
+                </p>
+            </article>
+        </section>
+        <section class="contacts" id="contacts">
+            <h3>contacts</h3>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="email">Email</label>
+                <input type="mail">
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </main>
-    <footer>
+    <footer class="bg-dark">
         &copy; 2022
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
