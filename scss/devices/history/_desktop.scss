@@ -1,5 +1,14 @@
 @media (min-width: 1000px) {
     .history {
+        header {
+            figure:nth-child(2) {
+                img {
+                    object-position: 20% 80%;
+                    // object-position: bottom;
+                }
+            }
+        }
+
         .origin {
             >aside {
                 width: 100%;
