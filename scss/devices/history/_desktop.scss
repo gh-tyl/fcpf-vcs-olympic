@@ -1,5 +1,14 @@
 @media (min-width: 1000px) {
     .history {
+        header {
+            figure:nth-child(2) {
+                img {
+                    object-position: 20% 80%;
+                    // object-position: bottom;
+                }
+            }
+        }
+
         .origin {
             >aside {
                 width: 100%;
@@ -19,15 +28,12 @@
         }
 
         .symbol {
-            >aside {
-                width: 100%;
-                @include flexBox(row);
-                flex-direction: row-reverse;
+            h2 {
+                font-size: 36px;
             }
 
             figure {
-                width: 46%;
-                padding: 2%;
+                width: 20%;
                 height: fit-content;
             }
 
@@ -35,6 +41,41 @@
                 width: 100%;
                 float: left;
             }
+        }
+
+        .ancient {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .hover-base {
+            position: relative;
+        }
+
+        .hover-text {
+            @include flexBox(column);
+            justify-content: center;
+            align-items: center;
+            row-gap: 3vh;
+            background-color: $defaultAlloyOrange;
+            position: absolute;
+            width: fit-content;
+            height: 100%;
+            padding: 5%;
+            opacity: 0;
+            text-align: center;
+
+            h4,
+            blockquote {
+                color: $defaultWhite;
+            }
+        }
+
+        .hover-text:hover {
+            width: 100%;
+            opacity: 1;
         }
     }
 }

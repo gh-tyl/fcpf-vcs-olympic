@@ -2,9 +2,27 @@
     .history {
         h2 {
             font-size: 36px;
-            // width: fit-content;
             padding: 1%;
-            border-bottom: 3px solid $defaultYellowGold;
+        }
+
+        .symbol {
+            h2 {
+                font-size: 24px;
+                width: fit-content;
+            }
+
+            figure {
+                width: 20%;
+            }
+
+            p,
+            p:first-letter {
+                font-size: 20px;
+                float: none;
+                padding: 0;
+                text-align: center;
+                color: $defaultWhite;
+            }
         }
 
         .ancient {
