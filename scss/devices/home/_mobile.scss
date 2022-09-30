@@ -121,5 +121,53 @@
                 // }
             }
         }
+
+        .winter-olympic {
+            h4 {
+                color: $defaultBlueSapphire;
+                font-size: 28px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $defaultGamboge;
+                // background-color: $defaultGamboge;
+                padding: 0%;
+                // border-radius: 10px;
+                border-bottom: 1px solid $defaultGamboge;
+                width: fit-content;
+            }
+        }
+
+        .athletes {
+            @include flexBox(column);
+            align-items: center;
+
+            text-align: center;
+        }
+
+        form {
+            @include flexBox(column);
+            align-items: center;
+            row-gap: 1vh;
+        }
+
+        input,
+        textarea {
+            width: 80%;
+        }
+
+        label {
+            width: 80%;
+            text-align: left;
+        }
+
+        [type="submit"] {
+            color: $defaultWhite;
+            width: 30%;
+            border: none;
+            border-radius: 15px;
+            background-color: $defaultGamboge;
+        }
     }
 }
