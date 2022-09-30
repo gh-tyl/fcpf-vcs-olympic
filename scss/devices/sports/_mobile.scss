@@ -1,21 +1,31 @@
 @media (min-width: 200px) {
     .sports-main {
+        text-align: center;
         @include flexBox(Column);
         row-gap: 10vh;
         background-color: whitesmoke;
         > section {
             padding: 10% 5%;
+            
         }
 
         img {
             width: 45vh;
             height: 35vh;
+            border-radius: 5px;
         }
 
         h2, h3, h4 {
             text-transform: capitalize;
             text-align: center;
-            color: $defaultDarkBlue;
+            color: $defaultBlueSapphire;
+        }
+
+        h2 {
+            width: fit-content;
+            border-bottom: 1px solid $defaultBlueSapphire;
+            padding-bottom: 2%;
+            font-weight: 500;
         }
     }
 
@@ -28,6 +38,13 @@
         > article {
             @include flexBox(Column);
             row-gap: 2vh;
+            align-items: center;
+
+            img {
+                // border-radius: 50%;
+                width: 45vh;
+                height: 30vh;
+            }
         }
         
         figure, figcaption {
@@ -50,7 +67,7 @@
         figcaption {
             h5 {
                 text-transform: uppercase;
-                color: $defaultDarkBlue;
+                color: $defaultBlueSapphire;
             }
 
             p {
@@ -60,18 +77,19 @@
             }
 
             a {
-                border: 1px solid $defaultDarkBlue;
-                background-color: $defaultDarkBlue;
+                border: 1px solid $defaultBlueSapphire;
+                background-color: $defaultBlueSapphire;
                 padding: 2% 5%;
                 text-decoration: none;
                 color: whitesmoke;
                 text-transform: capitalize;
+                border-radius: 10px;
 
                 &:hover {
                     text-decoration: underline;
-                    background-color: $defaultYellowGold;
-                    color: $defaultDarkBlue;
-                    border: 1px solid $defaultDarkBlue;
+                    background-color: $defaultMiddleBlueGreen;
+                    color: $defaultBlueSapphire;
+                    border: 1px solid $defaultBlueSapphire;
                 }
             }
         }
@@ -81,18 +99,22 @@
     // WINTER SPORTS SECTION
     .sports-winter {
         color: $defaultGray;
-        background-color: $defaultDarkBlue;
+        background-color: $defaultBlueSapphire;
         @include flexBox(Column);
         row-gap: 3vh;
 
         h2, h3, h4 {
         color: $defaultGray;
+        }
 
+        h2 {
+            border-bottom: 1px solid $defaultGray;
         }
 
         > article {
             @include flexBox(Column);
             row-gap: 2vh;
+            align-items: center;
             // border: 1px solid red;
         }
 
@@ -107,7 +129,7 @@
                 color: $defaultGray;
 
                 &:hover {
-                    color: $defaultYellowGold;
+                    color: $defaultMiddleBlueGreen;
                     text-decoration: underline;
                 }
             }
@@ -123,8 +145,9 @@
             align-items: center;
 
             img {
-                width: 30vh;
+                width: 40vh;
                 height: 40vh;
+                border-radius: 50%;
             }
         }
 
@@ -137,27 +160,31 @@
         @include flexBox(Column);
         row-gap: 3vh;
 
+        > article:first-child {
+            align-items: center;
+
+        }
+
         > article, > section {
             @include flexBox(Column);
             row-gap: 2vh;
         }
 
         > section {
-            // align-items: center;
 
             a {
                 @include flexBox(Column);
                 align-items: center;
                 padding: 5%;
                 row-gap: 1vh;
+                border-radius: 10px;
                 text-decoration: none;
                 border: 1px solid transparent;
             }
-
             
             a:hover {
-                border: 1px solid $defaultYellowGold;
-                background-color: $defaultYellowGold;
+                border: 1px solid $defaultMiddleBlueGreen;
+                background-color: $defaultMiddleBlueGreen;
 
                 h4 {
                     color: whitesmoke;
@@ -165,6 +192,89 @@
              }
         }
     }
-
     // END PARALIMPIC SPORTS
+
+    // CURIOSITY
+    .sports-curiosity {
+        @include flexBox(Column);
+        row-gap: 3vh;
+        background-color: $defaultBlueSapphire;
+        color: whitesmoke;
+
+        > article {
+            @include flexBox(Column);
+            height: 30vh;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+
+            aside {
+                @include flexBox(Column);
+                // border: 1px solid red;
+                padding-top: 10%;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                z-index: 3;
+                background-color: rgba(50, 50, 50,.5);
+            }
+            h2 {
+                border: 0px none transparent;
+                color: whitesmoke;
+                text-align: left;
+                padding-left: 10%;
+            }
+        }
+
+        video {
+            position: absolute;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .accordion {
+        h2 {
+            width: unset;
+            border-bottom: 0px none transparent;
+            padding-bottom: -0%;
+            font-weight: 500;
+        }
+        // HAD TO SET THIS TO H2 OF ACCORDION BC OF OTHERS H2.
+
+        article, button {
+            color: $defaultWhite;
+            background-color: $defaultBlueSapphire;
+            border: 1px solid $defaultWhite;
+        }
+        .accordion-button:not(.collapsed) {
+            color: $defaultMediumChampagne;
+            background-color: $defaultBlueSapphire;
+        }
+    }
+    // END CURIOSITY
+
+    .sports-references {
+        h2 {
+            width: unset;
+            text-align: left;
+        }
+        // align-items: center;
+        text-align: left;
+        @include flexBox(column);
+        row-gap: 5vh;
+       ol {
+        @include flexBox(column);
+        row-gap: 2vh;
+       }
+       a {
+        text-decoration: none;
+        color: $defaultBlueSapphire;
+       }
+       a:hover {
+        text-decoration: underline;
+        color: $defaultMiddleBlueGreen;
+       }
+    }
 }

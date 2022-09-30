@@ -1,0 +1,55 @@
+@media (min-width: 1000px) {
+    .sports-main {
+        > section {
+            padding-top: 5%;
+        }
+
+        text-align: left;
+    }
+
+    .sports-summer {
+        row-gap: 10vh;
+        p {
+            width: 100%;
+        }
+
+        aside {
+            padding-top: 5%;
+
+            img {
+                height: 50vh;
+                width: 90vh;
+            }
+
+            figure {
+                flex-direction: row;
+            }
+        }
+        
+        figcaption {
+            p {
+                text-align: left;
+
+            }
+        }
+
+        > section {
+            article {
+                flex-direction: column;
+            }
+            figure {
+                flex-direction: row;
+                
+            }
+
+            
+
+            img {
+                height: 50vh;
+                width: 90vh;
+            }
+        }
+    }
+
+    
+}
