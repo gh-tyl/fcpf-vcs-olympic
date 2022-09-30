@@ -1,5 +1,6 @@
 @media (min-width: 200px) {
     .sports-main {
+        text-align: center;
         @include flexBox(Column);
         row-gap: 10vh;
         background-color: whitesmoke;
@@ -38,6 +39,7 @@
             @include flexBox(Column);
             row-gap: 2vh;
             align-items: center;
+
             img {
                 // border-radius: 50%;
                 width: 45vh;
@@ -252,4 +254,27 @@
         }
     }
     // END CURIOSITY
+
+    .sports-references {
+        h2 {
+            width: unset;
+            text-align: left;
+        }
+        // align-items: center;
+        text-align: left;
+        @include flexBox(column);
+        row-gap: 5vh;
+       ol {
+        @include flexBox(column);
+        row-gap: 2vh;
+       }
+       a {
+        text-decoration: none;
+        color: $defaultBlueSapphire;
+       }
+       a:hover {
+        text-decoration: underline;
+        color: $defaultMiddleBlueGreen;
+       }
+    }
 }
