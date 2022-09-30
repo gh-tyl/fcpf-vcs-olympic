@@ -5,17 +5,26 @@
         background-color: whitesmoke;
         > section {
             padding: 10% 5%;
+            
         }
 
         img {
             width: 45vh;
             height: 35vh;
+            border-radius: 5px;
         }
 
         h2, h3, h4 {
             text-transform: capitalize;
             text-align: center;
             color: $defaultBlueSapphire;
+        }
+
+        h2 {
+            width: fit-content;
+            border-bottom: 1px solid $defaultBlueSapphire;
+            padding-bottom: 2%;
+            font-weight: 500;
         }
     }
 
@@ -28,6 +37,12 @@
         > article {
             @include flexBox(Column);
             row-gap: 2vh;
+            align-items: center;
+            img {
+                // border-radius: 50%;
+                width: 45vh;
+                height: 30vh;
+            }
         }
         
         figure, figcaption {
@@ -66,6 +81,7 @@
                 text-decoration: none;
                 color: whitesmoke;
                 text-transform: capitalize;
+                border-radius: 10px;
 
                 &:hover {
                     text-decoration: underline;
@@ -87,12 +103,16 @@
 
         h2, h3, h4 {
         color: $defaultGray;
+        }
 
+        h2 {
+            border-bottom: 1px solid $defaultGray;
         }
 
         > article {
             @include flexBox(Column);
             row-gap: 2vh;
+            align-items: center;
             // border: 1px solid red;
         }
 
@@ -123,8 +143,9 @@
             align-items: center;
 
             img {
-                width: 30vh;
+                width: 40vh;
                 height: 40vh;
+                border-radius: 50%;
             }
         }
 
@@ -137,23 +158,27 @@
         @include flexBox(Column);
         row-gap: 3vh;
 
+        > article:first-child {
+            align-items: center;
+
+        }
+
         > article, > section {
             @include flexBox(Column);
             row-gap: 2vh;
         }
 
         > section {
-            // align-items: center;
 
             a {
                 @include flexBox(Column);
                 align-items: center;
                 padding: 5%;
                 row-gap: 1vh;
+                border-radius: 10px;
                 text-decoration: none;
                 border: 1px solid transparent;
             }
-
             
             a:hover {
                 border: 1px solid $defaultMiddleBlueGreen;
@@ -165,58 +190,66 @@
              }
         }
     }
-
     // END PARALIMPIC SPORTS
 
-        // CURIOSITY
-        .sports-curiosity {
+    // CURIOSITY
+    .sports-curiosity {
+        @include flexBox(Column);
+        row-gap: 3vh;
+        background-color: $defaultBlueSapphire;
+        color: whitesmoke;
+
+        > article {
             @include flexBox(Column);
-            row-gap: 3vh;
-            background-color: $defaultBlueSapphire;
-            color: whitesmoke;
-    
-            > article {
+            height: 30vh;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+
+            aside {
                 @include flexBox(Column);
-                height: 30vh;
-                position: relative;
-                align-items: center;
-                justify-content: center;
-    
-                aside {
-                    @include flexBox(Column);
-                    // border: 1px solid red;
-                    padding-top: 10%;
-                    height: 100%;
-                    width: 100%;
-                    position: absolute;
-                    z-index: 3;
-                    background-color: rgba(50, 50, 50,.5);
-                }
-                h2 {
-                    color: whitesmoke;
-                    text-align: left;
-                    padding-left: 10%
-                }
-            }
-    
-            video {
-                position: absolute;
-                object-fit: cover;
+                // border: 1px solid red;
+                padding-top: 10%;
                 height: 100%;
                 width: 100%;
+                position: absolute;
+                z-index: 3;
+                background-color: rgba(50, 50, 50,.5);
+            }
+            h2 {
+                border: 0px none transparent;
+                color: whitesmoke;
+                text-align: left;
+                padding-left: 10%;
             }
         }
-    
-        .accordion {
-            article, button {
-                color: $defaultWhite;
-                background-color: $defaultBlueSapphire;
-                border: 1px solid $defaultWhite;
-            }
-            .accordion-button:not(.collapsed) {
-                color: $defaultMediumChampagne;
-                background-color: $defaultBlueSapphire;
-            }
+
+        video {
+            position: absolute;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
         }
-        // END CURIOSITY
+    }
+
+    .accordion {
+        h2 {
+            width: unset;
+            border-bottom: 0px none transparent;
+            padding-bottom: -0%;
+            font-weight: 500;
+        }
+        // HAD TO SET THIS TO H2 OF ACCORDION BC OF OTHERS H2.
+
+        article, button {
+            color: $defaultWhite;
+            background-color: $defaultBlueSapphire;
+            border: 1px solid $defaultWhite;
+        }
+        .accordion-button:not(.collapsed) {
+            color: $defaultMediumChampagne;
+            background-color: $defaultBlueSapphire;
+        }
+    }
+    // END CURIOSITY
 }
