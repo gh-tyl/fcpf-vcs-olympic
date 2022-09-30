@@ -1,7 +1,7 @@
 @media (min-width: 200px) {
 
 	main{
-		background-color: $defaultMediumChampagne  ;
+		background-color: whitesmoke
 	}
 
 	.hover{
@@ -147,17 +147,21 @@
 		height: 100%;
 		background-color: $defaultMediumChampagne ;
 
-		h2{
-			display: flex;
-			justify-content: center;
+		article{
 			color: $defaultRust;
 			font-size: 32px;
 			padding: 5%;
+			text-align: center;
+			
+			h2{
+				font-weight: 800;
+				text-align:center;
+			}
 		}
 		
 		figure{
 			@include flexBox(column);
-			row-gap: 2vh;
+			row-gap: 1vh;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
@@ -166,6 +170,12 @@
 
 		figcaption{
 			padding: 5%;
+
+			h3{
+				color: $defaultViridianGreen;
+				font-size: 20px;
+				font-weight: 900;
+			}
 		}
 
 		img {
@@ -174,26 +184,33 @@
 		}
 	}
 
-	.news{
-		background-color: $defaultViridianGreen;
-		padding: 5%;
+	.ref {
+		height: 30vh;
+		background-color: whitesmoke;
+		@include flexBox(column);
+		justify-content: center;
+		width: 100%;
+		row-gap: 3vh;
 
-		aside{
-			@include flexBox(column);
-			justify-content: center;
-			align-items: center;
-			row-gap: 2vh;
-			text-align: center;
-			height: 100%;
+		h2{
+			font-size: 30px;
+			color: $defaultGamboge;
+			padding-left: 3%;
+			border-bottom: 2px solid rgb(210, 140, 140);
 		}
 
-		a{
-			background-color: $defaultBlueSapphire;
-			padding: 2%;
+		a {
+			color: $defaultRichBlack;
 			text-decoration: none;
-			color: $defaultWhite;
 		}
 
+		a:hover {
+			color: $defaultViridianGreen ;
+		}
+
+		i {
+			padding-left: 1%;
+		}
 	}
 
 
