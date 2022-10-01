@@ -89,6 +89,7 @@
             width: 50vh;
         }
         a {
+            transition: .4s;
             height: 40vh;
             width: 55vh;
         }
@@ -108,6 +109,10 @@
             }
         }
 
+    }
+
+    footer {
+        padding: 2%;
     }
 
     
