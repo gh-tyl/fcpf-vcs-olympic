@@ -1,0 +1,60 @@
+@media (min-width: 1000px){
+
+    .carousel-item{
+        img{
+            object-position: 20% 30%;
+        }
+    }
+
+    .carousel-item:nth-child(2){
+        img{
+            object-position: 20% 30%;
+        }
+    }
+
+    .legendary{
+        article{
+            column-gap: 2vh;
+        }
+
+        article{
+            flex-wrap: nowrap;
+        }
+
+        img{
+			width: 15vh;
+			height: 15vh;
+			border: 2px solid rgb(188, 173, 36);
+		}
+    }
+
+    .greatest{
+
+        figure{
+            row-gap: 5vh;
+            flex-direction: row;
+        }
+
+        figcaption{
+            width: 60%;
+        }
+
+        img {
+			width: 40vh;
+			height: 40vh;
+		}
+    }
+
+    .ref{
+        font-size: 30px;
+
+        h2{
+            font-size: 50px;  
+        }
+    }
+
+    footer{
+        font-size: 40px;
+    }
+
+}
