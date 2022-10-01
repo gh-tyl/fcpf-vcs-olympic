@@ -1,0 +1,119 @@
+@media (min-width: 1000px) {
+    .sports-main {
+        > section {
+            padding-top: 5%;
+        }
+
+        text-align: left;
+    }
+
+    .sports-summer {
+        row-gap: 10vh;
+        p {
+            width: 100%;
+        }
+
+        aside {
+            padding-top: 5%;
+
+            img {
+                height: 50vh;
+                width: 90vh;
+            }
+
+            figure {
+                flex-direction: row;
+            }
+        }
+        
+        figcaption {
+            p {
+                text-align: left;
+
+            }
+        }
+
+        > section {
+            row-gap: 10vh;
+            article {
+                flex-direction: column;
+            }
+            figure {
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            figure:nth-child(2) {
+                flex-direction: row-reverse;
+            }
+
+            img {
+                height: 50vh;
+                width: 80vh;
+            }
+
+            figcaption {
+                width: 50%;
+                // align-items: flex-start;
+            }
+        }
+    }
+
+    .sports-winter {
+        p {
+            width: 100%;
+        }
+        ul {
+            height: 40vh;
+            width: 80%;
+        }
+
+        figure {
+
+            img {
+                height: 50vh;
+                width: 50vh;
+            }
+        }
+    }
+
+    .sports-paralympics {
+
+        > section {
+            justify-content: space-evenly;
+        }
+
+        img {
+            height: 40vh;
+            width: 50vh;
+        }
+        a {
+            transition: .4s;
+            height: 40vh;
+            width: 55vh;
+        }
+    }
+
+    .sports-curiosity {
+        > article:first-child {
+            // border: 1px solid red;
+            height: 50vh;
+        }
+
+        > article:nth-child(2) {    
+
+            p {
+                text-align: center;
+                width: 60%;
+            }
+        }
+
+    }
+
+    footer {
+        padding: 2%;
+    }
+
+    
+}

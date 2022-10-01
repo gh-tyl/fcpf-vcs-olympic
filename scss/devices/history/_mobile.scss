@@ -1,0 +1,164 @@
+@media (min-width: 200px) {
+    .history {
+        #carouselExampleCaptions {
+            img {
+                width: 100%;
+                height: 70vh;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            aside:nth-child(2) {
+                img {
+                    object-position: 20% 10%;
+                }
+            }
+
+            aside:last-child {
+                img {
+                    object-position: 50% 30%;
+                }
+            }
+        }
+
+        h2 {
+            color: $defaultGamboge;
+            text-transform: capitalize;
+            font-size: 36px;
+            padding: 1%;
+            border-bottom: 3px solid $defaultGamboge;
+        }
+
+        h3 {
+            button {
+                color: $defaultRichBlack;
+            }
+
+            span:first-letter {
+                text-transform: capitalize;
+            }
+        }
+
+        h4 {
+            color: $defaultGamboge;
+            text-transform: capitalize;
+        }
+
+        p {
+            padding: 1%;
+        }
+
+        figure {
+            width: 100%;
+
+            >img {
+                width: 100%;
+            }
+        }
+
+        main {
+            @include flexBox(column);
+            row-gap: 3vh;
+
+            >section {
+                @include flexBox(column);
+                row-gap: 3vh;
+                padding: 5%;
+            }
+
+            >section:nth-child(2) {
+                background-color: $defaultBlueSapphire;
+            }
+
+            >section:nth-child(4) {
+                background-color: $defaultBlueSapphire;
+            }
+
+            p:first-letter {
+                font-size: 36px;
+                float: left;
+                padding-right: 1vh;
+            }
+        }
+
+        .symbol {
+            padding: 0%;
+
+            aside {
+                padding: 5%;
+                background-color: rgba(25, 25, 25, 0.6);
+                @include flexBox(column);
+                align-items: center;
+                row-gap: 3vh;
+            }
+
+            h2 {
+                font-size: 12px;
+                width: fit-content;
+            }
+
+            figure {
+                width: 30%;
+            }
+
+            p,
+            p:first-letter {
+                font-size: 12px;
+                float: none;
+                padding: 0;
+                text-align: center;
+                color: $defaultWhite;
+            }
+        }
+
+        .ancient {
+            aside {
+                @include flexBox(column);
+                row-gap: 1vh;
+            }
+
+            figure {
+                @include flexBox(column);
+                row-gap: 1vh;
+            }
+
+            img {
+                width: 100%;
+                height: 40vh;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+
+        .ref {
+            a {
+                color: $defaultRichBlack;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $defaultRubyRed;
+                text-decoration: underline;
+            }
+
+            i {
+                padding-left: 1%;
+            }
+        }
+
+        .accordion-button,
+        .accordion-item {
+            color: $defaultWhite;
+            background-color: $defaultBlueSapphire;
+            border: 0;
+        }
+
+        .accordion-button {
+            border-bottom: 1px solid $defaultGamboge;
+        }
+
+        .accordion-button:hover {
+            color: $defaultWhite;
+        }
+    }
+}

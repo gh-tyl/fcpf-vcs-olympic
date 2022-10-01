@@ -1,0 +1,96 @@
+@media (min-width: 1000px) {
+    #home {
+        header {
+            #carouselExampleCaptions {
+                aside:first-child {
+                    img {
+                        object-position: center;
+                    }
+                }
+    
+                aside:nth-child(2) {
+                    img {
+                        object-position: 50% 30%;
+                    }
+                }
+    
+                aside:last-child {
+                    img {
+                        object-position: center;
+                    }
+                }
+            }
+        }
+        main > section {
+            padding: 5% 5%;
+        }
+        h4 {
+            color: $defaultGamboge;
+        }
+        h5 {
+            font-size: 28px;
+        }
+        .summer-olympic {
+            figure {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            figcaption {
+                width: 60%;
+            }
+
+            img {
+                height: 40vh;
+                width: 60vh;
+            }
+        }
+
+        .winter-olympic {
+            @include flexBox(column);
+            row-gap: 3vh;
+
+            blockquote {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            blockquote:last-child {
+                flex-direction: row-reverse;
+            }
+
+            img {
+                height: 40vh;
+                width: 60vh;
+            }
+
+            aside {
+                @include flexBox(column);
+                row-gap: 3vh;
+                width: 60%;
+            }
+        }
+
+        form {
+            row-gap: 3vh;
+        }
+
+        label {
+            padding-top: 2%;
+        }
+
+        input, textarea {
+            padding: 1%;
+        }
+
+        ::placeholder {
+            font-size: 16px;
+        }
+
+        [type="submit"] {
+            width: 25vh;
+        }
+    }
+}

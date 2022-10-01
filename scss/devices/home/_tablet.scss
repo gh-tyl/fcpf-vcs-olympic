@@ -1,0 +1,22 @@
+@media (min-width: 600px) {
+    #home {
+
+        .summer-olympic {
+            figcaption {
+                a {
+                    padding: 2%;
+                }
+            }
+        }
+
+        .winter-olympic {
+            a {
+                padding: 2%;
+            }
+        }
+
+        [type="submit"] {
+            width: 20%;
+        }
+    }
+}
