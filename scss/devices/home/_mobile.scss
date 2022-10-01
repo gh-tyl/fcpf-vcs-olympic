@@ -1,6 +1,13 @@
 @media (min-width: 300px) {
+    
 
     #home {
+        header {
+            h5 {
+                text-transform: uppercase;
+                font-size: 30px;
+            }
+        }
         #carouselExampleCaptions {
             img {
                 width: 100%;
@@ -78,8 +85,9 @@
 
         .summer-olympic {
             h5 {
+                text-transform: uppercase;
                 width: 100%;
-                color: $defaultGamboge;
+                color: $defaultMediumChampagne;
             }
 
             figure {
@@ -101,7 +109,7 @@
 
                 p {
                     color: $defaultBlueSapphire;
-                    background-color: $defaultGamboge;
+                    background-color: $defaultMediumChampagne;
                     padding: 5%;
                     border-radius: 10px;
                 }
@@ -109,33 +117,57 @@
                 a {
                     text-decoration: none;
                     color: $defaultBlueSapphire;
-                    background-color: $defaultGamboge;
+                    background-color: $defaultMediumChampagne;
                     padding: 5%;
                     border-radius: 10px;
                     width: fit-content;
+                    border: 1px solid $defaultMediumChampagne;
+                    transition: .4s;
                 }
 
-                // a:hover {
-                //     color: $defaultGamboge;
-                //     background-color: $defaultBlueSapphire;
-                // }
+                a:hover {
+                    color: $defaultBlueSapphire;
+                    background-color: $defaultMiddleBlueGreen;
+                    border: 1px solid $defaultMiddleBlueGreen;
+
+                }
             }
         }
 
         .winter-olympic {
             h4 {
+                text-transform: uppercase;
                 color: $defaultBlueSapphire;
                 font-size: 28px;
             }
 
             a {
+                background-color: $defaultBlueSapphire;
+                color: $defaultMediumChampagne;
+                border: 1px solid $defaultMediumChampagne;
                 text-decoration: none;
-                color: $defaultGamboge;
-                // background-color: $defaultGamboge;
-                padding: 0%;
-                // border-radius: 10px;
-                border-bottom: 1px solid $defaultGamboge;
+                padding: 5%;
+                border-radius: 10px;
                 width: fit-content;
+                transition: .4s;
+                align-self: center;
+            }
+
+            a:hover {
+                color: $defaultBlueSapphire;
+                background-color: $defaultMediumChampagne;
+                border: 1px solid $defaultBlueSapphire;
+
+            }
+
+            > section {
+                @include flexBox(column);
+                row-gap: 5vh;
+            }
+
+            blockquote {
+                @include flexBox(column);
+                row-gap: 3vh;
             }
         }
 
@@ -155,6 +187,13 @@
         input,
         textarea {
             width: 80%;
+            border-radius: 5px;
+            padding: 2%;
+        }
+
+        textarea {
+            resize: none;
+            height: 30vh;
         }
 
         label {
@@ -168,6 +207,55 @@
             border: none;
             border-radius: 15px;
             background-color: $defaultGamboge;
+            transition: .4s;
         }
+        [type="submit"]:hover {
+
+            background-color: $defaultBlueSapphire;
+        }
+
+        ::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    footer {
+        @include flexBox(column);
+        row-gap: 5vh;
+        font-size: 14px;
+        
+        p {
+            margin: 0;
+        }
+
+        section {
+            @include flexBox(column);
+            row-gap: 5vh;
+            align-items: center;
+        }
+
+        article {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid $defaultMediumChampagne;
+            width: 60%;
+        }
+
+        aside {
+            display: flex;
+            column-gap: 2vh;
+        }
+
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        a:hover {
+            color: $defaultMediumChampagne;
+            text-decoration: none;
+        }
+
+        
     }
 }

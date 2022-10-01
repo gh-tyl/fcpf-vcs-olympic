@@ -84,6 +84,7 @@
                 color: whitesmoke;
                 text-transform: capitalize;
                 border-radius: 10px;
+                transition: .4s;
 
                 &:hover {
                     text-decoration: underline;
@@ -124,6 +125,7 @@
             list-style-type: square;
 
             a {
+                transition: .4s;
                 text-decoration: none;
                 text-transform: capitalize;
                 color: $defaultGray;
@@ -173,6 +175,7 @@
         > section {
 
             a {
+                transition: .4s;
                 @include flexBox(Column);
                 align-items: center;
                 padding: 5%;
@@ -269,6 +272,7 @@
         row-gap: 2vh;
        }
        a {
+        transition: .4s;
         text-decoration: none;
         color: $defaultBlueSapphire;
        }
