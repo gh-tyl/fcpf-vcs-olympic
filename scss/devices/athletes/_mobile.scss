@@ -9,13 +9,12 @@
 		aside{
 			@include flexBox(row);
 			justify-content: center;
-			font-size: 100px;
-
+		
 			h2{
-				font-size: 35px;
+				font-size: 50px;
 				padding-top: 5%;
 				color: $defaultRust;
-				text-transform: uppercase
+				text-transform: uppercase;
 			}
 		}
 
@@ -109,7 +108,7 @@
 
 		article{
 			color: $defaultRust;
-			font-size: 32px;
+			// font-size: 32px;
 			padding: 5%;
 			text-align: center;
 			
@@ -145,18 +144,20 @@
 	}
 
 	.ref {
-		height: 30vh;
+		height: 4	0vh;
 		background-color: whitesmoke;
 		@include flexBox(column);
 		justify-content: center;
 		width: 100%;
 		row-gap: 3vh;
+		padding-left: 5%;
+		padding-right: 5%;
 
 		h2{
 			font-size: 30px;
 			color: $defaultGamboge;
 			padding-left: 3%;
-			border-bottom: 2px solid rgb(210, 140, 140);
+			border-bottom: 3px solid rgb(210, 140, 140);
 		}
 
 		a {
